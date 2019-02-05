@@ -144,5 +144,12 @@
     <script src="lib/artTemplate/template-web.js"></script>
     <script src="js/index.js"></script>
 </body>
-
+<script>
+    $.ajax({
+        url:'http://localhost:9090/api/getindexmenu',
+        success:function(obj){
+            console.log(obj);
+        }
+    })
+</script>
 </html>
